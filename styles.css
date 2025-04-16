@@ -1,31 +1,53 @@
 /* Reset & Base Styles */
+/* Base Styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f4f4f4;
+  background-color: #fff;
   color: #333;
 }
+
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
+
 /* Header */
 header {
-  background: #222;
-  color: white;
-  padding: 1em 0;
-  position: relative;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo {
-  font-size: 1.5em;
+
+header .logo {
+  font-size: 2em;
+  color: white;
   font-weight: bold;
 }
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font
 nav ul {
   list-style: none;
   display: flex;
